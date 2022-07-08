@@ -41,13 +41,6 @@ def configure_chip(remote=False):
         add_sources(chip)
 
         chip.clock('we_din\[5\]', period=20)
-
-        chip.add('input', 'verilog', 'ram/sky130_sram_4kbyte_1rw_64x512_8.bb.v')
-
-        for file in os.listdir('../core/'):
-             filename, file_extension = os.path.splitext(file)
-             if file_extension == '.sv':
-                 chip.add('input', 'verilog', '../core/' + file)
  
         return chip
 
