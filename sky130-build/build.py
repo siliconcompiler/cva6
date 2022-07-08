@@ -9,7 +9,6 @@ from sources import add_sources
 from libs import lib_setup
 
 def setup_options(chip):
-        chip.set('option', 'steplist', ['physyn', 'place', 'cts', 'route', 'dfm', 'export'])
         chip.set('option', 'define', 'VERILATOR')
         chip.set('option', 'loglevel', 'INFO')
         chip.set('option', 'relax', True)
