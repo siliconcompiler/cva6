@@ -1,6 +1,7 @@
 ![Build Status](https://github.com/openhwgroup/cva6/actions/workflows/ci.yml/badge.svg?branch=master)
 
-# CVA6 RISC-V CPU
+# CVA6 RISC-V CPU (SiliconCompiler fork)
+### This is a fork of the CVA6 RISC-V CPU that demonstrates how to build the chip with SiliconCompiler using the SkyWater SKY130 PDK. Relevant build files are in in the sky130-build directory.
 
 CVA6 is a 6-stage, single issue, in-order CPU which implements the 64-bit RISC-V instruction set. It fully implements I, M, A and C extensions as specified in Volume I: User-Level ISA V 2.3 as well as the draft privilege extension 1.10. It implements three privilege levels M, S, U to fully support a Unix-like operating system. Furthermore it is compliant to the draft external debug spec 0.13.
 
